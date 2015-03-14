@@ -1,0 +1,9 @@
+{
+    "name": "test-node-module",
+    "version": "0.1.0",
+    "description": "A simple module to test npm in my prod environment.",
+    "dependencies": {
+        "browserify": "~9.0.0",
+        "uglify": "~2.4.17"
+    }
+}
