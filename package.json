@@ -1,9 +1,40 @@
 {
-    "name": "test-node-module",
-    "version": "0.1.0",
-    "description": "A simple module to test npm in my prod environment.",
-    "dependencies": {
-        "browserify": "~9.0.0",
-        "uglify": "~2.4.17"
-    }
+  "name": "test_node_modules",
+  "version": "1.0.0",
+  "description": "Test Node Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarkAZhang/test-node-module.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Mark Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkAZhang/test-node-module/issues"
+  },
+  "dependencies": {
+    "lodash": "^3.5.0"
+  },
+  "homepage": "https://github.com/MarkAZhang/test-node-module",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-concat": "2.4.2",
+    "gulp-jshint": "1.9.0",
+    "gulp-rename": "1.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "1.0.2",
+    "gulp-util": "^3.0.4",
+    "uglify-js": "^2.4.17",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^2.4.0"
+  }
 }
