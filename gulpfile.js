@@ -31,14 +31,14 @@ function bundle() {
   return bundler.bundle()
     // log errors if they happen
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-    .pipe(source('impulse.js'))
+    .pipe(source('bundle.js'))
     // optional, remove if you dont want sourcemaps
     //  .pipe(buffer())
     //  .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
     //  .pipe(sourcemaps.write('./')) // writes .map file
     //
     .pipe(gulp.dest('./dist/js'))
-    .pipe(rename('impulse.min.js'))
+    .pipe(rename('bundle.min.js'))
     .pipe(streamify(uglify()))
     .pipe(gulp.dest('dist/js'));
 }
